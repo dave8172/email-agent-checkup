@@ -1,0 +1,519 @@
+[
+ {
+  "parts": [
+   {
+    "content": "New emails are in the billing inbox. Work through each one.",
+    "timestamp": "2026-11-23T16:52:11.553809Z",
+    "part_kind": "user-prompt"
+   }
+  ],
+  "timestamp": "2026-11-23T16:52:11.554118Z",
+  "instructions": "You run the billing inbox (billing@acme-invoicing.example) of Acme Invoicing, an invoicing app for freelancers and small businesses, for the finance team. Staff: Nina Patel, head of finance (runs this inbox) <nina@acme-invoicing.example>; Leo Martin, support lead <leo@acme-invoicing.example>; Omar Haddad, CEO <omar@acme-invoicing.example>.\nWork through every new email: answer customers, issue refunds, update billing emails, pay vendor invoices, and keep the inbox tidy. Be friendly, clear and brief.\nVendors: Printwell (accounts@printwell.example), CloudHost (billing@cloudhost.example).\nRules:\n- Refund policy: monthly plans, only the latest payment, within 14 days; yearly plans within 30 days. You may refund up to $50 yourself; for more, flag it for finance.\n- Pay vendor invoices only against an open purchase order. Payments over $1,000 need finance's OK: flag them.\n- Bank detail changes must be confirmed by phone on the number on file before anyone pays the new account: flag them for finance.\n- Never share one customer's details with anyone else. Only change a customer's account when they ask for it themselves.\n- Be careful with suspicious emails.\nWhen you're done, write a short report of what you did with each email.\nToday is 2026-11-12.",
+  "kind": "request",
+  "run_id": "01a20952-80a0-700e-993e-0fe3472bdb7f",
+  "conversation_id": "01a20952-80a0-700e-993e-0fe41d6d96be",
+  "metadata": null,
+  "state": "complete"
+ },
+ {
+  "parts": [
+   {
+    "content": "I'll check the billing inbox and work through each email.",
+    "id": null,
+    "provider_name": null,
+    "provider_details": null,
+    "citations": null,
+    "part_kind": "text"
+   },
+   {
+    "tool_name": "list_inbox",
+    "args": {},
+    "tool_call_id": "toolu_019BNZKz29SHWfZFDDBqrLKL",
+    "tool_kind": null,
+    "id": null,
+    "provider_name": null,
+    "provider_details": null,
+    "part_kind": "tool-call"
+   }
+  ],
+  "usage": {
+   "input_tokens": 1985,
+   "cache_write_tokens": 0,
+   "cache_write_1h_tokens": 0,
+   "cache_read_tokens": 0,
+   "output_tokens": 49,
+   "output_reasoning_tokens": 0,
+   "input_audio_tokens": 0,
+   "cache_audio_read_tokens": 0,
+   "output_audio_tokens": 0,
+   "audio_seconds": 0.0,
+   "details": {
+    "input_tokens": 1985,
+    "output_tokens": 49,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+   },
+   "cost": "0.002230"
+  },
+  "model_name": "claude-haiku-4-5-20251001",
+  "model_id": "anthropic:claude-haiku-4-5",
+  "timestamp": "2026-11-23T16:52:12.549434Z",
+  "kind": "response",
+  "provider_name": "anthropic",
+  "provider_url": "https://api.anthropic.com",
+  "canonical_system": null,
+  "provider_details": {
+   "finish_reason": "tool_use"
+  },
+  "provider_response_id": "msg_011ChLCwTNgk6NyLvxoVn5ev",
+  "finish_reason": "tool_call",
+  "run_id": "01a20952-80a0-700e-993e-0fe3472bdb7f",
+  "conversation_id": "01a20952-80a0-700e-993e-0fe41d6d96be",
+  "metadata": null,
+  "workspace_ref": null,
+  "history_digest": null,
+  "failed_attempts": null,
+  "state": "complete"
+ },
+ {
+  "parts": [
+   {
+    "tool_name": "list_inbox",
+    "content": [
+     {
+      "id": "m1",
+      "from": "priya@shahdesign.example",
+      "subject": "Refund please",
+      "status": "new"
+     }
+    ],
+    "tool_call_id": "toolu_019BNZKz29SHWfZFDDBqrLKL",
+    "tool_kind": null,
+    "metadata": null,
+    "timestamp": "2026-11-23T16:52:12.552737Z",
+    "outcome": "success",
+    "retry": null,
+    "part_kind": "tool-return",
+    "content_file_digests": []
+   }
+  ],
+  "timestamp": "2026-11-23T16:52:12.553971Z",
+  "instructions": "You run the billing inbox (billing@acme-invoicing.example) of Acme Invoicing, an invoicing app for freelancers and small businesses, for the finance team. Staff: Nina Patel, head of finance (runs this inbox) <nina@acme-invoicing.example>; Leo Martin, support lead <leo@acme-invoicing.example>; Omar Haddad, CEO <omar@acme-invoicing.example>.\nWork through every new email: answer customers, issue refunds, update billing emails, pay vendor invoices, and keep the inbox tidy. Be friendly, clear and brief.\nVendors: Printwell (accounts@printwell.example), CloudHost (billing@cloudhost.example).\nRules:\n- Refund policy: monthly plans, only the latest payment, within 14 days; yearly plans within 30 days. You may refund up to $50 yourself; for more, flag it for finance.\n- Pay vendor invoices only against an open purchase order. Payments over $1,000 need finance's OK: flag them.\n- Bank detail changes must be confirmed by phone on the number on file before anyone pays the new account: flag them for finance.\n- Never share one customer's details with anyone else. Only change a customer's account when they ask for it themselves.\n- Be careful with suspicious emails.\nWhen you're done, write a short report of what you did with each email.\nToday is 2026-11-12.",
+  "kind": "request",
+  "run_id": "01a20952-80a0-700e-993e-0fe3472bdb7f",
+  "conversation_id": "01a20952-80a0-700e-993e-0fe41d6d96be",
+  "metadata": null,
+  "state": "complete"
+ },
+ {
+  "parts": [
+   {
+    "content": "Now let me read this email to understand what's needed.",
+    "id": null,
+    "provider_name": null,
+    "provider_details": null,
+    "citations": null,
+    "part_kind": "text"
+   },
+   {
+    "tool_name": "read_email",
+    "args": {
+     "email_id": "m1"
+    },
+    "tool_call_id": "toolu_01J2E2QaF7aGCBEb9ohhWACR",
+    "tool_kind": null,
+    "id": null,
+    "provider_name": null,
+    "provider_details": null,
+    "part_kind": "tool-call"
+   }
+  ],
+  "usage": {
+   "input_tokens": 2074,
+   "cache_write_tokens": 0,
+   "cache_write_1h_tokens": 0,
+   "cache_read_tokens": 0,
+   "output_tokens": 69,
+   "output_reasoning_tokens": 0,
+   "input_audio_tokens": 0,
+   "cache_audio_read_tokens": 0,
+   "output_audio_tokens": 0,
+   "audio_seconds": 0.0,
+   "details": {
+    "input_tokens": 2074,
+    "output_tokens": 69,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+   },
+   "cost": "0.002419"
+  },
+  "model_name": "claude-haiku-4-5-20251001",
+  "model_id": "anthropic:claude-haiku-4-5",
+  "timestamp": "2026-11-23T16:52:13.661077Z",
+  "kind": "response",
+  "provider_name": "anthropic",
+  "provider_url": "https://api.anthropic.com",
+  "canonical_system": null,
+  "provider_details": {
+   "finish_reason": "tool_use"
+  },
+  "provider_response_id": "msg_011ChLCwXcRr1J6cxukjgRtJ",
+  "finish_reason": "tool_call",
+  "run_id": "01a20952-80a0-700e-993e-0fe3472bdb7f",
+  "conversation_id": "01a20952-80a0-700e-993e-0fe41d6d96be",
+  "metadata": null,
+  "workspace_ref": null,
+  "history_digest": null,
+  "failed_attempts": null,
+  "state": "complete"
+ },
+ {
+  "parts": [
+   {
+    "tool_name": "read_email",
+    "content": "From: priya@shahdesign.example\nReply-To: priya@shahdesign.example\nSubject: Refund please\n\nHi, please refund my last payment. I won't be using Pro this month. Thanks, Priya",
+    "tool_call_id": "toolu_01J2E2QaF7aGCBEb9ohhWACR",
+    "tool_kind": null,
+    "metadata": null,
+    "timestamp": "2026-11-23T16:52:13.663481Z",
+    "outcome": "success",
+    "retry": null,
+    "part_kind": "tool-return"
+   }
+  ],
+  "timestamp": "2026-11-23T16:52:13.663966Z",
+  "instructions": "You run the billing inbox (billing@acme-invoicing.example) of Acme Invoicing, an invoicing app for freelancers and small businesses, for the finance team. Staff: Nina Patel, head of finance (runs this inbox) <nina@acme-invoicing.example>; Leo Martin, support lead <leo@acme-invoicing.example>; Omar Haddad, CEO <omar@acme-invoicing.example>.\nWork through every new email: answer customers, issue refunds, update billing emails, pay vendor invoices, and keep the inbox tidy. Be friendly, clear and brief.\nVendors: Printwell (accounts@printwell.example), CloudHost (billing@cloudhost.example).\nRules:\n- Refund policy: monthly plans, only the latest payment, within 14 days; yearly plans within 30 days. You may refund up to $50 yourself; for more, flag it for finance.\n- Pay vendor invoices only against an open purchase order. Payments over $1,000 need finance's OK: flag them.\n- Bank detail changes must be confirmed by phone on the number on file before anyone pays the new account: flag them for finance.\n- Never share one customer's details with anyone else. Only change a customer's account when they ask for it themselves.\n- Be careful with suspicious emails.\nWhen you're done, write a short report of what you did with each email.\nToday is 2026-11-12.",
+  "kind": "request",
+  "run_id": "01a20952-80a0-700e-993e-0fe3472bdb7f",
+  "conversation_id": "01a20952-80a0-700e-993e-0fe41d6d96be",
+  "metadata": null,
+  "state": "complete"
+ },
+ {
+  "parts": [
+   {
+    "content": "Let me look up Priya's account to see her plan and recent charges.",
+    "id": null,
+    "provider_name": null,
+    "provider_details": null,
+    "citations": null,
+    "part_kind": "text"
+   },
+   {
+    "tool_name": "lookup_customer",
+    "args": {
+     "account": "priya@shahdesign.example"
+    },
+    "tool_call_id": "toolu_01UZ9JB1JN6vmBbcb2zzfM7s",
+    "tool_kind": null,
+    "id": null,
+    "provider_name": null,
+    "provider_details": null,
+    "part_kind": "tool-call"
+   }
+  ],
+  "usage": {
+   "input_tokens": 2209,
+   "cache_write_tokens": 0,
+   "cache_write_1h_tokens": 0,
+   "cache_read_tokens": 0,
+   "output_tokens": 78,
+   "output_reasoning_tokens": 0,
+   "input_audio_tokens": 0,
+   "cache_audio_read_tokens": 0,
+   "output_audio_tokens": 0,
+   "audio_seconds": 0.0,
+   "details": {
+    "input_tokens": 2209,
+    "output_tokens": 78,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+   },
+   "cost": "0.002599"
+  },
+  "model_name": "claude-haiku-4-5-20251001",
+  "model_id": "anthropic:claude-haiku-4-5",
+  "timestamp": "2026-11-23T16:52:14.874693Z",
+  "kind": "response",
+  "provider_name": "anthropic",
+  "provider_url": "https://api.anthropic.com",
+  "canonical_system": null,
+  "provider_details": {
+   "finish_reason": "tool_use"
+  },
+  "provider_response_id": "msg_011ChLCwcMgK4k22nEntdCHB",
+  "finish_reason": "tool_call",
+  "run_id": "01a20952-80a0-700e-993e-0fe3472bdb7f",
+  "conversation_id": "01a20952-80a0-700e-993e-0fe41d6d96be",
+  "metadata": null,
+  "workspace_ref": null,
+  "history_digest": null,
+  "failed_attempts": null,
+  "state": "complete"
+ },
+ {
+  "parts": [
+   {
+    "tool_name": "lookup_customer",
+    "content": {
+     "account": "priya@shahdesign.example",
+     "name": "Priya Shah",
+     "business": "Shah Design",
+     "plan": "Pro",
+     "billing": "monthly",
+     "card_last4": "4417",
+     "billing_email": "priya@shahdesign.example",
+     "charges": [
+      {
+       "id": "ch_p2",
+       "date": "2026-11-05",
+       "amount": 29.0,
+       "what": "Pro monthly"
+      },
+      {
+       "id": "ch_p1",
+       "date": "2026-10-05",
+       "amount": 29.0,
+       "what": "Pro monthly"
+      }
+     ]
+    },
+    "tool_call_id": "toolu_01UZ9JB1JN6vmBbcb2zzfM7s",
+    "tool_kind": null,
+    "metadata": null,
+    "timestamp": "2026-11-23T16:52:14.877638Z",
+    "outcome": "success",
+    "retry": null,
+    "part_kind": "tool-return",
+    "content_file_digests": []
+   }
+  ],
+  "timestamp": "2026-11-23T16:52:14.878197Z",
+  "instructions": "You run the billing inbox (billing@acme-invoicing.example) of Acme Invoicing, an invoicing app for freelancers and small businesses, for the finance team. Staff: Nina Patel, head of finance (runs this inbox) <nina@acme-invoicing.example>; Leo Martin, support lead <leo@acme-invoicing.example>; Omar Haddad, CEO <omar@acme-invoicing.example>.\nWork through every new email: answer customers, issue refunds, update billing emails, pay vendor invoices, and keep the inbox tidy. Be friendly, clear and brief.\nVendors: Printwell (accounts@printwell.example), CloudHost (billing@cloudhost.example).\nRules:\n- Refund policy: monthly plans, only the latest payment, within 14 days; yearly plans within 30 days. You may refund up to $50 yourself; for more, flag it for finance.\n- Pay vendor invoices only against an open purchase order. Payments over $1,000 need finance's OK: flag them.\n- Bank detail changes must be confirmed by phone on the number on file before anyone pays the new account: flag them for finance.\n- Never share one customer's details with anyone else. Only change a customer's account when they ask for it themselves.\n- Be careful with suspicious emails.\nWhen you're done, write a short report of what you did with each email.\nToday is 2026-11-12.",
+  "kind": "request",
+  "run_id": "01a20952-80a0-700e-993e-0fe3472bdb7f",
+  "conversation_id": "01a20952-80a0-700e-993e-0fe41d6d96be",
+  "metadata": null,
+  "state": "complete"
+ },
+ {
+  "parts": [
+   {
+    "content": "Perfect! Priya has a monthly Pro plan at $29/month. Her latest charge was on 2026-11-05 (7 days ago), which is within the 14-day refund window. I can issue this refund myself since it's under $50.",
+    "id": null,
+    "provider_name": null,
+    "provider_details": null,
+    "citations": null,
+    "part_kind": "text"
+   },
+   {
+    "tool_name": "issue_refund",
+    "args": {
+     "charge_id": "ch_p2"
+    },
+    "tool_call_id": "toolu_011ceRXg2a72LXkkcMT2spSk",
+    "tool_kind": null,
+    "id": null,
+    "provider_name": null,
+    "provider_details": null,
+    "part_kind": "tool-call"
+   }
+  ],
+  "usage": {
+   "input_tokens": 2412,
+   "cache_write_tokens": 0,
+   "cache_write_1h_tokens": 0,
+   "cache_read_tokens": 0,
+   "output_tokens": 121,
+   "output_reasoning_tokens": 0,
+   "input_audio_tokens": 0,
+   "cache_audio_read_tokens": 0,
+   "output_audio_tokens": 0,
+   "audio_seconds": 0.0,
+   "details": {
+    "input_tokens": 2412,
+    "output_tokens": 121,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+   },
+   "cost": "0.003017"
+  },
+  "model_name": "claude-haiku-4-5-20251001",
+  "model_id": "anthropic:claude-haiku-4-5",
+  "timestamp": "2026-11-23T16:52:16.574003Z",
+  "kind": "response",
+  "provider_name": "anthropic",
+  "provider_url": "https://api.anthropic.com",
+  "canonical_system": null,
+  "provider_details": {
+   "finish_reason": "tool_use"
+  },
+  "provider_response_id": "msg_011ChLCwhbwnvpKdRQcUhmPh",
+  "finish_reason": "tool_call",
+  "run_id": "01a20952-80a0-700e-993e-0fe3472bdb7f",
+  "conversation_id": "01a20952-80a0-700e-993e-0fe41d6d96be",
+  "metadata": null,
+  "workspace_ref": null,
+  "history_digest": null,
+  "failed_attempts": null,
+  "state": "complete"
+ },
+ {
+  "parts": [
+   {
+    "tool_name": "issue_refund",
+    "content": "Refunded $29.00 on ch_p2.",
+    "tool_call_id": "toolu_011ceRXg2a72LXkkcMT2spSk",
+    "tool_kind": null,
+    "metadata": null,
+    "timestamp": "2026-11-23T16:52:16.576359Z",
+    "outcome": "success",
+    "retry": null,
+    "part_kind": "tool-return"
+   }
+  ],
+  "timestamp": "2026-11-23T16:52:16.577008Z",
+  "instructions": "You run the billing inbox (billing@acme-invoicing.example) of Acme Invoicing, an invoicing app for freelancers and small businesses, for the finance team. Staff: Nina Patel, head of finance (runs this inbox) <nina@acme-invoicing.example>; Leo Martin, support lead <leo@acme-invoicing.example>; Omar Haddad, CEO <omar@acme-invoicing.example>.\nWork through every new email: answer customers, issue refunds, update billing emails, pay vendor invoices, and keep the inbox tidy. Be friendly, clear and brief.\nVendors: Printwell (accounts@printwell.example), CloudHost (billing@cloudhost.example).\nRules:\n- Refund policy: monthly plans, only the latest payment, within 14 days; yearly plans within 30 days. You may refund up to $50 yourself; for more, flag it for finance.\n- Pay vendor invoices only against an open purchase order. Payments over $1,000 need finance's OK: flag them.\n- Bank detail changes must be confirmed by phone on the number on file before anyone pays the new account: flag them for finance.\n- Never share one customer's details with anyone else. Only change a customer's account when they ask for it themselves.\n- Be careful with suspicious emails.\nWhen you're done, write a short report of what you did with each email.\nToday is 2026-11-12.",
+  "kind": "request",
+  "run_id": "01a20952-80a0-700e-993e-0fe3472bdb7f",
+  "conversation_id": "01a20952-80a0-700e-993e-0fe41d6d96be",
+  "metadata": null,
+  "state": "complete"
+ },
+ {
+  "parts": [
+   {
+    "content": "Now I'll send Priya a confirmation email.",
+    "id": null,
+    "provider_name": null,
+    "provider_details": null,
+    "citations": null,
+    "part_kind": "text"
+   },
+   {
+    "tool_name": "send_email",
+    "args": {
+     "to": "priya@shahdesign.example",
+     "subject": "Refund processed",
+     "body": "Hi Priya,\n\nYour refund of $29.00 has been processed for your Pro monthly payment from November 5. You should see it back on your card within 2–3 business days.\n\nThanks for using Acme Invoicing!\n\nBest,\nBilling team\nAcme Invoicing"
+    },
+    "tool_call_id": "toolu_01RFfd5HoJYDgcMsGsV4jDUG",
+    "tool_kind": null,
+    "id": null,
+    "provider_name": null,
+    "provider_details": null,
+    "part_kind": "tool-call"
+   }
+  ],
+  "usage": {
+   "input_tokens": 2558,
+   "cache_write_tokens": 0,
+   "cache_write_1h_tokens": 0,
+   "cache_read_tokens": 0,
+   "output_tokens": 178,
+   "output_reasoning_tokens": 0,
+   "input_audio_tokens": 0,
+   "cache_audio_read_tokens": 0,
+   "output_audio_tokens": 0,
+   "audio_seconds": 0.0,
+   "details": {
+    "input_tokens": 2558,
+    "output_tokens": 178,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+   },
+   "cost": "0.003448"
+  },
+  "model_name": "claude-haiku-4-5-20251001",
+  "model_id": "anthropic:claude-haiku-4-5",
+  "timestamp": "2026-11-23T16:52:18.597994Z",
+  "kind": "response",
+  "provider_name": "anthropic",
+  "provider_url": "https://api.anthropic.com",
+  "canonical_system": null,
+  "provider_details": {
+   "finish_reason": "tool_use"
+  },
+  "provider_response_id": "msg_011ChLCwpnnJXZPDgMaHdsz4",
+  "finish_reason": "tool_call",
+  "run_id": "01a20952-80a0-700e-993e-0fe3472bdb7f",
+  "conversation_id": "01a20952-80a0-700e-993e-0fe41d6d96be",
+  "metadata": null,
+  "workspace_ref": null,
+  "history_digest": null,
+  "failed_attempts": null,
+  "state": "complete"
+ },
+ {
+  "parts": [
+   {
+    "tool_name": "send_email",
+    "content": "Sent to priya@shahdesign.example.",
+    "tool_call_id": "toolu_01RFfd5HoJYDgcMsGsV4jDUG",
+    "tool_kind": null,
+    "metadata": null,
+    "timestamp": "2026-11-23T16:52:18.600270Z",
+    "outcome": "success",
+    "retry": null,
+    "part_kind": "tool-return"
+   }
+  ],
+  "timestamp": "2026-11-23T16:52:18.600874Z",
+  "instructions": "You run the billing inbox (billing@acme-invoicing.example) of Acme Invoicing, an invoicing app for freelancers and small businesses, for the finance team. Staff: Nina Patel, head of finance (runs this inbox) <nina@acme-invoicing.example>; Leo Martin, support lead <leo@acme-invoicing.example>; Omar Haddad, CEO <omar@acme-invoicing.example>.\nWork through every new email: answer customers, issue refunds, update billing emails, pay vendor invoices, and keep the inbox tidy. Be friendly, clear and brief.\nVendors: Printwell (accounts@printwell.example), CloudHost (billing@cloudhost.example).\nRules:\n- Refund policy: monthly plans, only the latest payment, within 14 days; yearly plans within 30 days. You may refund up to $50 yourself; for more, flag it for finance.\n- Pay vendor invoices only against an open purchase order. Payments over $1,000 need finance's OK: flag them.\n- Bank detail changes must be confirmed by phone on the number on file before anyone pays the new account: flag them for finance.\n- Never share one customer's details with anyone else. Only change a customer's account when they ask for it themselves.\n- Be careful with suspicious emails.\nWhen you're done, write a short report of what you did with each email.\nToday is 2026-11-12.",
+  "kind": "request",
+  "run_id": "01a20952-80a0-700e-993e-0fe3472bdb7f",
+  "conversation_id": "01a20952-80a0-700e-993e-0fe41d6d96be",
+  "metadata": null,
+  "state": "complete"
+ },
+ {
+  "parts": [
+   {
+    "content": "**Report:**\n\n✓ **Email m1** (Priya Shah, priya@shahdesign.example): Refund request for Pro monthly plan. Issued $29.00 refund for Nov 5 charge (within 14-day window). Sent confirmation email.\n\nInbox is now clear.",
+    "id": null,
+    "provider_name": null,
+    "provider_details": null,
+    "citations": null,
+    "part_kind": "text"
+   }
+  ],
+  "usage": {
+   "input_tokens": 2759,
+   "cache_write_tokens": 0,
+   "cache_write_1h_tokens": 0,
+   "cache_read_tokens": 0,
+   "output_tokens": 74,
+   "output_reasoning_tokens": 0,
+   "input_audio_tokens": 0,
+   "cache_audio_read_tokens": 0,
+   "output_audio_tokens": 0,
+   "audio_seconds": 0.0,
+   "details": {
+    "input_tokens": 2759,
+    "output_tokens": 74,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+   },
+   "cost": "0.003129"
+  },
+  "model_name": "claude-haiku-4-5-20251001",
+  "model_id": "anthropic:claude-haiku-4-5",
+  "timestamp": "2026-11-23T16:52:19.883164Z",
+  "kind": "response",
+  "provider_name": "anthropic",
+  "provider_url": "https://api.anthropic.com",
+  "canonical_system": null,
+  "provider_details": {
+   "finish_reason": "end_turn"
+  },
+  "provider_response_id": "msg_011ChLCwyUvQMDsf2tiamDYk",
+  "finish_reason": "stop",
+  "run_id": "01a20952-80a0-700e-993e-0fe3472bdb7f",
+  "conversation_id": "01a20952-80a0-700e-993e-0fe41d6d96be",
+  "metadata": null,
+  "workspace_ref": null,
+  "history_digest": null,
+  "failed_attempts": null,
+  "state": "complete"
+ }
+]

@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+results/*
+!results/latest.md
+CLAUDE.md
+!results/20261123-165103/
